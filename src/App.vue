@@ -20,7 +20,7 @@
             <v-icon>dns</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title><router-link to="/about">Import jobs</router-link></v-list-tile-title>
+            <v-list-tile-title><router-link to="/imports">Transaction Imports</router-link></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

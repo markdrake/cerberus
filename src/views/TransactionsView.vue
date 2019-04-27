@@ -18,6 +18,6 @@ import TransactionComponent from '@/components/TransactionsComponent.vue'
         TransactionComponent
     }
 })
-export default class Transactions extends Vue {}
+export default class TransactionsView extends Vue {}
 </script>
 

@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <v-data-table :headers="headers" :items="transactionImports" class="elevation-1">
     <template v-slot:items="props">
       <td>{{ props.item.id }}</td>

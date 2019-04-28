@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
   <v-data-table :headers="headers" :items="transactions" class="elevation-1">
     <template v-slot:items="props">
       <td>{{ props.item.id }}</td>
@@ -37,10 +37,10 @@ export default class TransactionsComponent extends Vue {
       align: "center"
     }
   ];
-  transactions: [] = [];
+  transactions = [];
 
   private created() {
-    // TODO: Here we are assinging transactions as they come from the axios response but we could add a layer of abstraction by creating Transaction objects and mapping them so we can operate through them via interaface.
+    // Note: Here we are assigning transactions as they come from the axios response but we could add a layer of abstraction by creating Transaction objects and mapping them so we can always know their properties and rules
     this.$http
       .get(
         "http://virtserver.swaggerhub.com/markdrake/cerberus_api/1.0.0/transactions"
